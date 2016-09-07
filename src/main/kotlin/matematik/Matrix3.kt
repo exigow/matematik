@@ -32,6 +32,12 @@ data class Matrix3(
 
   fun isDiagonal() = false // todo
 
+  fun toFloatArray() = floatArrayOf(
+    m00, m10, m20,
+    m01, m11, m21,
+    m02, m12, m22
+  )
+
   companion object {
 
     fun zero() = Matrix3(
